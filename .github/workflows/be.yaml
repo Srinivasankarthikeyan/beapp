@@ -43,5 +43,4 @@ jobs:
         uses: azure/webapps-deploy@v3
         with:
           app-name: ${{ env.AZURE_WEBAPP_NAME }}
-          package: backend
-          startup-command: "gunicorn -w 4 -b 0.0.0.0:8000 'app:create_app()'"
+          package: .
