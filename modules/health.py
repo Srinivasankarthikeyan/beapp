@@ -6,5 +6,5 @@ health_bp = Blueprint('health', __name__)
 def health_check():
     return jsonify({
         'status': 'OK',
-        'message': 'Backend is running'
+        'message': 'Backend is running v1'
     }), 200
