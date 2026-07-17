@@ -14,7 +14,9 @@ def create_app(config_class=Config):
 
     # Register blueprints
     from modules.health import health_bp
+    from modules.users import users_bp
     app.register_blueprint(health_bp, url_prefix="/api")
+    app.register_blueprint(users_bp, url_prefix="/api")
 
     return app
 
